@@ -74,15 +74,15 @@ pnpm dev
 
 #### Single image upload
 
-<img width="1339" alt="Screenshot 2024-07-15 at 11 39 30" src="https://github.com/user-attachments/assets/e33a6100-860a-476b-bc26-47c74500b5c1">
+<img width="1284" alt="Screenshot 2024-07-15 at 12 19 03" src="https://github.com/user-attachments/assets/f2aca7fa-a70f-494f-b93a-087e18e33288">
 
 ### User profile with image
 
-<img width="1339" alt="Screenshot 2024-07-15 at 11 40 05" src="https://github.com/user-attachments/assets/706e22b7-afc7-4680-af4c-3a431fac9181">
+<img width="1189" alt="Screenshot 2024-07-15 at 12 18 09" src="https://github.com/user-attachments/assets/9b6a86dd-7106-45ae-8b96-93d05c6790f4">
 
 ### Error handling
 
-<img width="815" alt="Screenshot 2024-07-15 at 11 41 46" src="https://github.com/user-attachments/assets/789ce75c-d1bd-4cc0-9fa7-b54e662efd6c">
+<img width="792" alt="Screenshot 2024-07-15 at 12 16 39" src="https://github.com/user-attachments/assets/457e8fe9-38fc-4f35-b6f2-244b64585743">
 
 ### Resources
 
