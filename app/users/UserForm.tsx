@@ -52,7 +52,7 @@ export default function UserFormApi({
           const formData = new FormData(event.currentTarget);
           await userFormApiHandler(formData);
         }}
-        className="flex flex-col justify-center gap-3 max-w-sm mx-auto"
+        className="flex flex-col justify-center gap-3 max-w-sm"
       >
         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
           First name

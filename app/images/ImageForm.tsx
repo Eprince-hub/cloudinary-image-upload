@@ -52,7 +52,7 @@ export default function ImageFormApi({
       <strong className="block mb-6">{formTitle}</strong>
       <form
         onSubmit={imageFormApiHandler}
-        className="flex flex-col justify-center gap-6 max-w-sm mx-auto"
+        className="flex flex-col justify-center gap-6 max-w-sm"
       >
         <label>
           Select Image:
