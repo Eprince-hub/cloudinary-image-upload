@@ -1,6 +1,6 @@
 # Cloudinary Image Upload Examples in Next.js
 
-This repository contains examples of how to upload images to Cloudinary in a Next.js application. The examples are based on the [Cloudinary documentation](https://cloudinary.com/documentation/upload_images) and the [Next.js documentation](https://nextjs.org/docs). The examples are written in TypeScript and it shows how you can upload images to Cloudinary using both `server action` and `API Route`.
+This repository contains examples of how to upload images to Cloudinary in a Next.js application. The examples are based on the [Cloudinary documentation](https://cloudinary.com/documentation/upload_images) and the [Next.js documentation](https://nextjs.org/docs). The examples are written in TypeScript and it shows how you can upload images to Cloudinary using `API Route` handlers.
 
 ## Technologies
 
@@ -13,12 +13,8 @@ This repository contains examples of how to upload images to Cloudinary in a Nex
 
 ## Features
 
-- Upload image to Cloudinary using `server action`
 - Upload image to Cloudinary using `API Route`
-- Create user profile with image using `server action`
 - Create user profile with image using `API Route`
-- Return data from the `server action` and access the data in the client
-- Error handling in the `server action` and displaying the error message in the client
 - Display the uploaded image in the client
 - Display the user profile with image in the client
 
@@ -77,15 +73,16 @@ pnpm dev
 ### UI
 
 #### Single image upload
-<img width="787" alt="Screenshot 2024-07-15 at 09 09 46" src="https://github.com/user-attachments/assets/1c3b71b3-2f8b-47ff-a97b-11e4ac0e3e9b">
+
+<img width="1339" alt="Screenshot 2024-07-15 at 11 39 30" src="https://github.com/user-attachments/assets/e33a6100-860a-476b-bc26-47c74500b5c1">
 
 ### User profile with image
-<img width="787" alt="Screenshot 2024-07-15 at 09 10 59" src="https://github.com/user-attachments/assets/2b819555-137a-4eb0-a284-18879381f017">
+
+<img width="1339" alt="Screenshot 2024-07-15 at 11 40 05" src="https://github.com/user-attachments/assets/706e22b7-afc7-4680-af4c-3a431fac9181">
 
 ### Error handling
-<img width="787" alt="Screenshot 2024-07-15 at 09 08 37" src="https://github.com/user-attachments/assets/e375c966-e2c3-45d2-8569-537435b6b586">
 
-
+<img width="815" alt="Screenshot 2024-07-15 at 11 41 46" src="https://github.com/user-attachments/assets/789ce75c-d1bd-4cc0-9fa7-b54e662efd6c">
 
 ### Resources
 
@@ -93,7 +90,6 @@ pnpm dev
 - [Next.js](https://nextjs.org/docs)
 - [Tailwind CSS](https://tailwindcss.com/docs)
 - [PostgreSQL](https://www.postgresql.org/docs/)
-- [Cloudinary and Next.js Server action](https://cloudinary.com/documentation/upload_assets_with_server_actions_nextjs_tutorial)
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [Ley](https://github.com/lukeed/ley)
 - [Node.js](https://nodejs.org/en/docs/)
