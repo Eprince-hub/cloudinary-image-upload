@@ -4,7 +4,6 @@ import { z } from 'zod';
 export type Image = {
   id: number;
   url: string;
-  type: string;
 };
 
 export const imageSchema = z.object({
