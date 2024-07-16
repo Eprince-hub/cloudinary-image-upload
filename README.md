@@ -70,13 +70,13 @@ pnpm dev
 
 ### UI
 
-#### Single image upload
+#### Uploaded image
 
-<img width="1284" alt="Screenshot 2024-07-15 at 12 19 03" src="https://github.com/user-attachments/assets/f2aca7fa-a70f-494f-b93a-087e18e33288">
+<img width="931" alt="Screenshot 2024-07-16 at 13 52 29" src="https://github.com/user-attachments/assets/cb619aea-46ed-45e8-b727-251c885cd87a">
 
 ### Error handling
 
-<img width="792" alt="Screenshot 2024-07-15 at 12 16 39" src="https://github.com/user-attachments/assets/457e8fe9-38fc-4f35-b6f2-244b64585743">
+<img width="931" alt="Screenshot 2024-07-16 at 13 49 32" src="https://github.com/user-attachments/assets/82c49c4a-fbcc-4b50-9733-6a9b40ed2394">
 
 ### Resources
 
