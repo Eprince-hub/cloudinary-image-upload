@@ -20,7 +20,7 @@ export default function ImageForm({
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
-    const response = await fetch('/api/upload', {
+    const response = await fetch('/api/image-uploads', {
       method: 'POST',
       body: formData,
     });
