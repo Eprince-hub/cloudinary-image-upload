@@ -14,9 +14,7 @@ This repository contains examples of how to upload images to Cloudinary in a Nex
 ## Features
 
 - Upload image to Cloudinary using `API Route`
-- Create user profile with image using `API Route`
 - Display the uploaded image in the client
-- Display the user profile with image in the client
 
 ## Getting Started
 
@@ -75,10 +73,6 @@ pnpm dev
 #### Single image upload
 
 <img width="1284" alt="Screenshot 2024-07-15 at 12 19 03" src="https://github.com/user-attachments/assets/f2aca7fa-a70f-494f-b93a-087e18e33288">
-
-### User profile with image
-
-<img width="1189" alt="Screenshot 2024-07-15 at 12 18 09" src="https://github.com/user-attachments/assets/9b6a86dd-7106-45ae-8b96-93d05c6790f4">
 
 ### Error handling
 
