@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import ErrorMessage from '../_components/ErrorMessage';
 import { SubmitButton } from '../_components/SubmitButton';
 
@@ -16,10 +16,7 @@ export default function ImageFormApi({
   const [successMessage, setSuccessMessage] = useState('');
   const router = useRouter();
 
-  async function imageFormApiHandler(event: {
-    preventDefault: () => void;
-    currentTarget: HTMLFormElement | undefined;
-  }) {
+  async function imageFormApiHandler(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
