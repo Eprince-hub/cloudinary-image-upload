@@ -1,6 +1,6 @@
+import { v2 as cloudinary } from 'cloudinary';
 import { NextRequest, NextResponse } from 'next/server';
 import { createImageInsecure } from '../../../database/queries';
-import { cloudinaryUpload } from '../../../util/cloudinaryUpload';
 
 export type ImageUploadResponsePost =
   | {
@@ -10,23 +10,47 @@ export type ImageUploadResponsePost =
       error: string;
     };
 
+type CloudinaryResponse = {
+  secure_url: string;
+};
+
 export async function POST(
   request: NextRequest,
 ): Promise<NextResponse<ImageUploadResponsePost>> {
   try {
     const formData = await request.formData();
+    const file = formData.get('image') as File;
 
-    if (!formData.has('image')) {
-      return NextResponse.json({ error: 'No image selected' });
+    if (!file.name) {
+      return NextResponse.json({ error: 'Please select an image' });
     }
 
-    const response = await cloudinaryUpload(formData, 'server-action-images');
+    if (file.size > 1024 * 1024 * 5) {
+      return NextResponse.json({ error: 'Image is too large' });
+    }
 
-    if (!response.imageUrl) {
+    const arrayBuffer = await file.arrayBuffer();
+    const buffer = new Uint8Array(arrayBuffer);
+
+    const response = await new Promise<CloudinaryResponse | undefined>(
+      (resolve, reject) => {
+        cloudinary.uploader
+          .upload_stream({}, (error, result) => {
+            if (error) {
+              reject(error);
+              return;
+            }
+            resolve(result);
+          })
+          .end(buffer);
+      },
+    );
+
+    if (!response) {
       return NextResponse.json({ error: 'Image upload failed' });
     }
 
-    const image = await createImageInsecure(response.imageUrl, 'API Upload');
+    const image = await createImageInsecure(response.secure_url);
 
     if (!image) {
       return NextResponse.json({ error: 'Image upload failed' });
