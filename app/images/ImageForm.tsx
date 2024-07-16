@@ -5,7 +5,7 @@ import { FormEvent, useState } from 'react';
 import ErrorMessage from '../_components/ErrorMessage';
 import { SubmitButton } from '../_components/SubmitButton';
 
-export default function ImageFormApi({
+export default function ImageForm({
   buttonTitle,
   formTitle,
 }: {
@@ -16,7 +16,7 @@ export default function ImageFormApi({
   const [successMessage, setSuccessMessage] = useState('');
   const router = useRouter();
 
-  async function imageFormApiHandler(event: FormEvent<HTMLFormElement>) {
+  async function uploadHandler(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
@@ -48,7 +48,7 @@ export default function ImageFormApi({
       {!!successMessage && <p className="text-green-600">{successMessage}</p>}
       <strong className="block mb-6">{formTitle}</strong>
       <form
-        onSubmit={imageFormApiHandler}
+        onSubmit={uploadHandler}
         className="flex flex-col justify-center gap-6 max-w-sm"
       >
         <label>
