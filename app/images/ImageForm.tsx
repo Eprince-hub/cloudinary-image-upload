@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { FormEvent, useState } from 'react';
 import ErrorMessage from '../_components/ErrorMessage';
 import { SubmitButton } from '../_components/SubmitButton';
+import { ImageUploadResponsePost } from '../api/image-uploads/route';
 
 export default function ImageForm({
   buttonTitle,
@@ -31,9 +32,9 @@ export default function ImageForm({
       return;
     }
 
-    const data = await response.json();
+    const data: ImageUploadResponsePost = await response.json();
 
-    if (data.error) {
+    if ('error' in data) {
       setErrorMessage(data.error);
       return;
     }
