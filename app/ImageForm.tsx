@@ -2,9 +2,9 @@
 
 import { useRouter } from 'next/navigation';
 import { FormEvent, useState } from 'react';
-import ErrorMessage from '../_components/ErrorMessage';
-import { SubmitButton } from '../_components/SubmitButton';
-import { ImageUploadResponsePost } from '../api/image-uploads/route';
+import ErrorMessage from './_components/ErrorMessage';
+import { SubmitButton } from './_components/SubmitButton';
+import { ImageUploadResponsePost } from './api/image-uploads/route';
 
 export default function ImageForm({
   buttonTitle,
