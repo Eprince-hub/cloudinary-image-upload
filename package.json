@@ -32,7 +32,7 @@
     "eslint-config-upleveled": "^8.6.13",
     "libpg-query": "15.2.0-rc.deparse.3",
     "postcss": "^8",
-    "prettier": "^3.3.2",
+    "prettier": "^3.3.3",
     "prettier-plugin-embed": "^0.4.15",
     "prettier-plugin-sql": "^0.18.1",
     "stylelint": "^16.7.0",
