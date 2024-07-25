@@ -6,6 +6,10 @@ import ErrorMessage from './_components/ErrorMessage';
 import { SubmitButton } from './_components/SubmitButton';
 import { ImageUploadResponsePost } from './api/image-uploads/route';
 
+type ResponseError = {
+  error: string;
+};
+
 export default function ImageForm({
   buttonTitle,
   formTitle,
@@ -27,7 +31,7 @@ export default function ImageForm({
     });
 
     if (!response.ok) {
-      const errorData = await response.json();
+      const errorData: ResponseError = await response.json();
       setErrorMessage(errorData.error);
       return;
     }
